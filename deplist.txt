@@ -1,0 +1,5 @@
+DBD::SQLite
+Plack::Handler::Apache2
+File::Spec
+XML::Feed
+JSON
