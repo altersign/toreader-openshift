@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16pt;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+header {
+  width: 100%;
+  line-height: 3em;
+  background: #f39c12;
+  color: #ecf0f1;
+  padding: 0 0.5em;
+  top: 0;
+}
+header .logo {
+  font-family: 'Julius Sans One', sans-serif;
+}
+header .logo img {
+  max-width: 2em;
+  max-height: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+header .column {
+  width: 650px;
+  position: absolute;
+  left: 50%;
+  margin-left: -325px;
+}
+header a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header a:hover {
+  background-color: #ecf0f1;
+  color: #f39c12;
+}
+header .logo {
+  height: 100%;
+}
+header nav {
+  display: inline-block;
+}
+header nav a {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.container {
+  display: block;
+  width: 650px;
+  margin: 2em auto 0 auto;
+}
+.container article.current {
+  border-left: 1px solid #f39c12;
+}
+.container article .notbold {
+  font-weight: normal;
+}
+.container .bullet {
+  float: left;
+  margin-top: 0.5em;
+}
+.container .content.brief {
+  margin-left: 1.2em;
+}
+.container .content.brief .text {
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .content.brief .text * {
+  display: none;
+}
+.container .article.sel h2,
+.container .article.sel div {
+  color: #f39c12;
+}
+.container .article {
+  color: #34495e;
+}
+.container .article-full h1,
+.container .article-full h2,
+.container .article-full h3,
+.container .article-full h4,
+.container .article-full h5,
+.container .article-full h6,
+.container .article-full p,
+.container .article-full div {
+  text-align: justify;
+}
+.container .article-full img {
+  max-width: 520px;
+  display: block;
+  float: none;
+}
+.container .article-full pre,
+.container .article-full code {
+  font-size: 0.7em;
+  overflow-x: hidden;
+  width: 100%;
+}
+.container .article-full h2.title {
+  margin-bottom: 2em;
+}
+.container .settings h2 {
+  margin-bottom: 2em;
+}
+.help {
+  background: rgba(52, 73, 94, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.help .dialog {
+  padding: 2em;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 40em;
+  height: 20em;
+  background: #f39c12;
+  color: #ecf0f1;
+  margin-left: -20em;
+  margin-top: -10em;
+}
+.help .dialog .hotkeys-help {
+  margin: 0 auto;
+  width: 22em;
+}
+.help .dialog h2 {
+  margin-bottom: 1em;
+}
+.help .dialog p {
+  font-size: 1.4em;
+}
+.input-wrapper {
+  background: #ecf0f1;
+  border: 2px #f39c12 solid;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.input-wrapper input {
+  line-height: 2em;
+  border: none;
+  outline: none;
+  background: #ecf0f1;
+  width: 520px;
+}
+.input-wrapper label {
+  color: #98afc6;
+  text-align: right;
+  width: 195px;
+}
+.btn {
+  display: inline-block;
+  background: #f39c12;
+  min-height: 2em;
+  padding: 0.5em;
+  min-width: 6em;
+  text-align: center;
+  margin: 0.5em 0;
+  color: #ecf0f1;
+  cursor: pointer !important;
+}
+.btn:hover {
+  background: #f4a62a;
+}
+.errormsg {
+  color: red;
+}
+.circle {
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+}
+.circle-full {
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #34495e;
+}
+.circle-empty {
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #ecf0f1;
+  border: 1px solid #34495e;
+}
+.circle-accented {
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #f39c12;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #ecf0f1;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #b1c2c6;
+}

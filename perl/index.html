@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toreadr</title>
+        <link href="css/fonts.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/stapes.min.js"></script>
+        <script type="text/javascript" src="js/md5.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <header class="clearfix">
+            <div class="logo pull-left"> <img src="/img/logo.png">TOREADR</div>
+            <nav class="column">
+                <a href="#news">All<span class="unread-count"></span></a>
+                <a href="#starred">Starred</a>
+                <a href="#unread">Unread</a>
+            </nav>
+            <nav class="pull-right">
+                <!-- a href="#feeds">Feeds</a>
+                <a href="#settings">Settings</a -->
+                <a href="#help">Help</a>
+            </nav>
+        </header>
+        <div class="container"></div>
+        <div class="help">
+            <div class="dialog">
+                <div class="hotkeys-help">
+                    <h2>Hotkeys</h2>
+                    <p>j/k : next/previous news item</p>
+                    <p>o : toggle headlines/full news mode</p>
+                    <p>s : mark as starred/unstarred</p>
+                    <p>m : mark as read/unread</p>
+                    <p>v : open in a new tab</p>
+                    <p>space : scroll down in full news mode</p>
+                </div>
+            </div>
+        </div>
+        <script id="template-login" type="text/html">
+            <div class="input-wrapper"><input class="hostname"><label>Hostname</label></div>
+            <div class="input-wrapper"><input class="login"><label>Login</label></div>
+            <div class="input-wrapper"><input type="Password" class="password"><label>Password</label></div>
+            <a class="btn btn-login">Login</a>
+            <p class="errormsg"></p>
+        </script>
+        <script id="template-headline" type="text/html">
+            <div class="article clearfix">
+                <div><div class="bullet {{circleClass}}"></div></div>
+                <div class="content brief">
+                    <h2>{{title}}</h2>
+                    <div class="text">{{html}}</div>
+                </div>
+            </div>
+        </script>
+        <script id="template-full" type="text/html">
+            <div class="article-full">
+                <h2 class="title">{{title}}</h2>
+                <div class="text">{{html}}</div>
+            </div>
+        </script>
+        <script id="template-settings" type="text/html">
+            <div class="settings">
+                <h2>SETTINGS</h2>
+                <p>Warning: if you logout you will lose all cached news</p>
+                <div class="btn btn-logout">Logout</div>
+            </div>
+        </script>
+    </body>
+</html>
