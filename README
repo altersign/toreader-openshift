@@ -19,7 +19,7 @@ Add this upstream toreader repo
     cd toreader
     git rm -r perl
     git commit -a -m "remove stock perl dir to prepare for toreader"
-    git remote add upstream -m master git://github.com/altersign/test.git
+    git remote add upstream -m master git://github.com/altersign/toreader-openshift.git
     git pull -s recursive -X theirs upstream master
 
 Update list of available RSS feeds (see example in toreader_test_feeds.sql)
