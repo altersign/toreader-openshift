@@ -50,7 +50,7 @@ sub update_feeds {
                 next if ($item_id);
 
                 $sth = $dbh->prepare( "INSERT INTO item (uid, feed_id, title, author, html, url, created_on_time) VALUES (?, ?, ?, ?, ?, ?, ?)" );
-                $sth->execute( $entry->id, $id, $entry->title, $entry->author, $entry->content->body, $entry->link, $entry->issued->epoch() );
+                $sth->execute( $entry->id, $id, $entry->title, $entry->author || 'unknown', $entry->content->body || '', $entry->link, $entry->issued->epoch() );
             }
 
             $sth = $dbh->prepare( "UPDATE feed SET last_updated_on_time=? WHERE id=?" );
